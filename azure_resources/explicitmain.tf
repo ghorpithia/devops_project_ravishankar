@@ -16,6 +16,10 @@ resource "azurerm_resource_group" "devopsrg" {
   name     = "devopsrg"
   location = "West Europe"
 }
+resource "azurerm_resource_group" "devopsrg1" {
+  name     = "devopsrg1"
+  location = "West Europe"
+}
 
 resource "azurerm_virtual_network" "devopsvnet" {
   depends_on          = [azurerm_resource_group.devopsrg]
